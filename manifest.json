@@ -2,7 +2,7 @@
   "name": "Inbox Warning Dismisser",
   "version": "1.0",
   "icons": {"92":"icon.png"},
-  "description": "For fans of Google Inbox! This chrome extensions dismisses end of life inbox warning. More info: https://github.com/navidmatin/chrome-inbox-warning-dismisser",
+  "description": "For fans of Google Inbox! This chrome extensions dismisses end of life inbox warning.",
   "manifest_version": 2,
   "permissions": [
       "activeTab"
