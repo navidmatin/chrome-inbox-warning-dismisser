@@ -1,3 +1,3 @@
 window.onload = function() {
-  document.getElementsByClassName("AK eX")[0].click();
+  document.getElementsByClassName("AK eX B6")[0].click();
 };
