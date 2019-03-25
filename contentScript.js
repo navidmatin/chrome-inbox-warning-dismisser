@@ -1,12 +1,21 @@
-window.onload = function() {
-  var tryToDismissInterval = setInterval(TryToDismiss, 1 * 1000);
-  setTimeout(function() {clearInterval(tryToDismissInterval)}, 10 * 1000);
-};
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-function TryToDismiss(){
-  var dom = document.getElementsByClassName("AK eX B6");
-  if(dom.length > 0)
+window.onload = async function() {
+  var foundTheButton = false
+  while (!foundTheButton)
   {
-    dom[0].click();
+    
+    var buttonArray = document.getElementsByClassName("AK eX B6")
+    if (buttonArray.length > 0)
+    {
+      foundTheButton = true
+      buttonArray[0].click();
+    }
+    else
+    {
+      await sleep(500);
+    }
   }
 }
