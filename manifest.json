@@ -1,15 +1,16 @@
 {
-    "name": "InboxWarningDismisser",
-    "version": "1.0",
-    "description": "For the Inbox lovers! Dismisses the inbox warning that it will go away soon",
-    "manifest_version": 2,
-    "permissions": [
-        "activeTab"
-      ],
-      "content_scripts": [
-        {
-          "matches": ["https://inbox.google.com/*"],
-          "js": ["contentScript.js"]
-        }
-      ]
-  }
+  "name": "Inbox Warning Dismisser",
+  "version": "1.0",
+  "icons": {"92":"icon.png"},
+  "description": "For fans of Google Inbox! This chrome extensions dismisses end of life inbox warning. More info: https://github.com/navidmatin/chrome-inbox-warning-dismisser",
+  "manifest_version": 2,
+  "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://inbox.google.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+}
